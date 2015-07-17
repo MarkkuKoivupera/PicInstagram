@@ -34,7 +34,7 @@
             this.TSBtn_open = new System.Windows.Forms.ToolStripButton();
             this.TSBtn_Trash = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.TSText_Address = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.TSBtn_Load = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
@@ -57,18 +57,18 @@
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
-            // toolStripContainer1.TSPnl_Main
+            // toolStripContainer1.TopToolStripPanel
             // 
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.TS_Main);
             // 
             // TS_Main
             // 
-            this.TS_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TS_Main.Dock = System.Windows.Forms.DockStyle.None;
             this.TS_Main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSBtn_open,
             this.TSBtn_Trash,
             this.toolStripSeparator1,
-            this.toolStripTextBox1,
+            this.TSText_Address,
             this.toolStripSeparator2,
             this.TSBtn_Load,
             this.toolStripButton4,
@@ -86,6 +86,7 @@
             this.TSBtn_open.Name = "TSBtn_open";
             this.TSBtn_open.Size = new System.Drawing.Size(23, 22);
             this.TSBtn_open.Text = "Open";
+            this.TSBtn_open.Click += new System.EventHandler(this.TSBtn_open_Click);
             // 
             // TSBtn_Trash
             // 
@@ -101,11 +102,11 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripTextBox1
+            // TSText_Address
             // 
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(500, 25);
-            this.toolStripTextBox1.Text = "https://instagram.com/tiiasusannae/";
+            this.TSText_Address.Name = "TSText_Address";
+            this.TSText_Address.Size = new System.Drawing.Size(500, 25);
+            this.TSText_Address.Text = "https://instagram.com/tiiasusannae/";
             // 
             // toolStripSeparator2
             // 
@@ -164,7 +165,7 @@
         private System.Windows.Forms.ToolStripButton TSBtn_open;
         private System.Windows.Forms.ToolStripButton TSBtn_Trash;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripTextBox TSText_Address;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton TSBtn_Load;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
